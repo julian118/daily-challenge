@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>daily challenge</title>
+</head>
+<body>
+    <div class="mainbox">
+        <header>
+            <div id="scoreCount">0 points</div>
+        </header>
+        <div class="bodyContainer">
+            <div class="titleHead">
+                daily challenge <span id="date">2 juli 2022</span>
+            </div>
+            <div class="optionsContainer">
+                <div id="easy">
+                    <div class="boxTitle">easy</div>
+                    <div id="boxDescription1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, sequi.</div>
+                    <div class="pointValue">50 points</div>
+                    <div class="box"><button class='completed' name="completed" id="easy" value="50" onclick="challenges.pointCounter(50,'easy')">completed</button></div>
+                </div>
+                <div id="medium">
+                    <div class="boxTitle">Medium</div>
+                    <div id="boxDescription2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, sequi.</div>
+                    <div class="pointValue">100 points</div>
+                    <div class="box"><button class='completed' name="completed" id="medium" value="100" onclick="challenges.pointCounter(100,'medium')">completed </button></div>
+                </div>
+                <div id="hard">
+                    <div class="boxTitle">hard</div>
+                    <div id="boxDescription3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, sequi.</div>
+                    <div class="pointValue">150 points</div>
+                    <div class="box"><button class='completed' name="completed" id="hard" value="150" onclick="challenges.pointCounter(150,'hard')">completed</button></div>
+                </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
