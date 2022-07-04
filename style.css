@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+body {
+    background-color:rgb(29, 29, 29);
+}
+p,div,h1,button,input,ul,li {
+    color: azure;
+    font-family: 'Open Sans', sans-serif;
+    list-style: none;
+}
+div.mainBox {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 7vh;
+    min-height: 40px;
+    width: 100vw;
+    background-color: rgb(34, 34, 34);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 2;
+}
+.bodyContainer {
+    position: relative;
+    top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titleHead {
+    font-size:3rem;
+    font-weight: bold;
+}
+.optionsContainer {
+    width: 100vw;
+    margin-top: 5vh;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items:inherit;
+    gap: 3vw;
+}
+.optionsContainer > div {
+    border: 2px solid white;
+    height: 25vh + 10px;
+    width: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 10px;    
+    padding: 2vh;
+}
+.optionsContainer #easy .boxTitle, .optionsContainer #easy .pointValue {
+    color: #f7aef8;
+}
+.optionsContainer #medium .boxTitle, .optionsContainer #medium .pointValue {
+    color: #b388eb;
+}
+.optionsContainer #hard .boxTitle, .optionsContainer #hard .pointValue {
+    color: #8093f1;
+}
+.optionsContainer > div div {
+    margin: 1vw;
+}
+.boxTitle {
+    font-weight: bold;
+    font-size: 1.8rem;
+    text-align: center;
+}
+.pointValue {
+    text-align: center;
+}
+.box {
+    display: flex;
+    justify-content: center;
+}
+.completed {
+    color: black;
+    font-weight: bold;
+}
+#boxDescription1, #boxDescription2, #boxDescription3 {
+    text-align: center;
+}
